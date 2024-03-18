@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha terceira página</title>
+    <script>
+        function apagar(){
+            document.getElementById("cxtexto").value="";
+        }
+        
+        
+        function gravar(){
+            let texto = document.getElementById("cxtexto").value;
+            // alert(texto)
+            document.getElementById("cxtexto").value="";
+            document.write(texto)
+        }
+        
+    </script>
+</head>
+<body>
+
+    <input type="text" id="cxtexto"> digite o nome de um aluno <br>
+    <input type="reset" value="apagar tudo" onclick="return apagar()"><br>
+    <input type="submit" value="gravar" onclick="return gravar()">
+    
+</body>
+</html>

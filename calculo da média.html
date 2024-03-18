@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let nome = prompt("digite o nome do aluno")
+        
+        let nota1 = parseFloat(prompt("digite a primeira nota"))
+        let nota2 = parseFloat(prompt("digite a segunda nota"))
+        let nota3 = parseFloat(prompt("digite a teceira nota"))
+
+        let media = (nota1 +nota2 + nota3) / 3
+
+        if(media>= 7){
+            alert("O "+nome+" tem média " +media+ " e esta aprovado")
+        }else{
+            document.write("O ",nome," tem média " ,media, " e esta aprovado")
+        }
+    
+
+    </script>
+    
+</body>
+</html>

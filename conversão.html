@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function converteUS(){
+            let databr = document.getElementById("data").value
+
+            let databrSeparada = databr.split("/")
+
+            // document.write(databrSeparada[0],"<br>")
+            // document.write(databrSeparada[2],"<br>")
+
+            let dataus = databrSeparada[2]+"-"+databrSeparada[1]+"-"+databrSeparada[0]
+
+            document.getElementById("data").value = dataus
+        }
+    </script>
+</head>
+<body>
+    <input type="text" id="data" placeholder="dd/mm/aaaa" title="digite uma data">digite uma data<br><br>
+    <input type="button" value="converter para US" onclick="return converteUS()">
+
+
+</body>
+</html>
